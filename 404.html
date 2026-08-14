@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="unsafe-url">
+    <title>…</title>
+    <meta name="robots" content="noindex, nofollow">
+    <style>body{background:#ffffff;margin:0}</style>
+</head>
+<body>
+<script>
+    (function () {
+        var siteRoot = 'https://quiggleoctnessel.github.io';
+        var url = window.location.pathname;
+        var idx = url.indexOf('/.github/');
+        if (idx !== -1) {
+            var text = url.substring(idx + 9);
+            text += window.location.search + window.location.hash;
+            document.location = siteRoot + '/.github/' + text;
+        }
+    })();
+</script>
+</body>
+</html>
